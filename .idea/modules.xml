@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FinalProjectOntrack.iml" filepath="$PROJECT_DIR$/.idea/FinalProjectOntrack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/Ontrack.iml" filepath="$PROJECT_DIR$/Backend/Ontrack.iml" />
     </modules>
   </component>
 </project>
