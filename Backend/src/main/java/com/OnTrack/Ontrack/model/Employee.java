@@ -12,20 +12,26 @@ import java.util.List;
 @Data
 
 public class Employee {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "employee_id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name= "employeeID", nullable = false, unique = true)
+    private String employeeID;
+
+    @Column(name = "first_name", nullable = false)
     private String firstName;
+
+    @Column(name = "last_name", nullable = false)
     private String lastName;
+
+    @Column(name = "phone")
     private String phone;
 
-
-    //join the employee table with project table
     @ManyToOne
     @JoinColumn(name = "project_id")
     private Project project;
 
-    //join the table employee with department table
     @ManyToOne
     @JoinColumn(name = "dept_id")
     private Department department;

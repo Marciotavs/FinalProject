@@ -25,12 +25,12 @@ import java.util.List;
         private LocalDate endDate;
         private String description;
 
-        @ManyToOne()
+        @ManyToOne
         @JoinColumn(name = "dept_id" , nullable = false)
         private Department department;
 
     @OneToMany(mappedBy = "project" , cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Employee> employees;
+    private List<Employee> employee;
 
 
 

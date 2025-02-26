@@ -19,7 +19,7 @@ import java.util.List;
 
         @Column(name = "dept_id")
         private Long id;
-        private String name;
+        private String departName;
 
        @OneToMany(mappedBy = "department" , cascade = CascadeType.ALL, orphanRemoval = true)
         private List<Project> project;
